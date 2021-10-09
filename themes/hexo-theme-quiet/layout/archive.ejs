@@ -1,0 +1,54 @@
+<%
+if(is_archive()){
+    page.title = __('archives')
+  }
+%>
+<%- css('css/archive.css') %>
+<%- partial('_partial/header',{name:'archive'}) %>
+<%
+var years = {};
+var PageNum = 0;
+var PageYear = 0;
+site.posts.sort('date').reverse().forEach(function(post){
+    var year = post.date.year()
+    if(years[year]===undefined){
+        years[year] = [];
+        PageYear += 1;
+    }
+    years[year].push(post);
+    PageNum += 1;
+});
+%>
+<div class="header-bg">
+    <div class="bg-content">
+        <span>
+            <img src="<%- theme.topIcon.archivesIcon %>" alt="Q">
+        </span>
+
+        <h2>It took <%- PageYear %> year to write a total of <%- PageNum %> article!</h2>
+    </div>
+</div>
+<div class="article-content">
+    <div id="article" class="content">
+        <% Object.keys(years).reverse().forEach(function(year){  %>
+        <p>
+            <%= year %>
+        </p>
+        <% years[year].map(function(post){  %>
+        <a href="<%- config.root %><%- post.path %>">
+            <span><%- (post.title || "Untitled").replace(/[<>&"]/g,function(c){
+                    return {'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c];
+                }) %></span>
+            <time><%= post.date.format('MM-DD') %></time>
+        </a>
+        <% }) %>
+        <% }) %>
+    </div>
+</div>
+
+
+
+
+<script>
+    $(function () { $('.article-content').addClass('content-move'); })
+</script>
