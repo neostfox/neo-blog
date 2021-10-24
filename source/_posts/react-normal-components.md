@@ -1,5 +1,6 @@
 ---
 title: React commonly used components
+categories: React
 ---
 
 ## Component list
