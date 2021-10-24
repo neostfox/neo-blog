@@ -1,6 +1,10 @@
 ---
 title: React commonly used components
 categories: React
+tags: 
+  - React
+  - Productivity
+  - Continued
 ---
 
 ## Component list
