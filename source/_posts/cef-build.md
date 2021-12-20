@@ -61,7 +61,7 @@ git commit -m "安装依赖" # 把变动提交到git暂存，否则后续更新�
 ### 下载 automate-git.py
 
 从官方下载[automate-git.py](https://bitbucket.org/chromiumembedded/cef/src/4664/tools/automate/automate-git.py)文件然后放到/code/automate/目录里。这里是特指 4664 分支版本，实际上是需要根据你想编译的分支，将 cef 的具体某个分支里的/tools/automate/automate-git.py 文件拷贝到上述目录里去。
-链接规则：<https://bitbucket.org/chromiumembedded/cef/src/==4664==/tools/automate/automate-git.py。其中4664为分支名称，在右侧选择Open> raw，保存到本地就可以了。
+链接规则：<https://bitbucket.org/chromiumembedded/cef/src/==4664==/tools/automate/automate-git.py>。其中4664为分支名称，在右侧选择Open raw，保存到本地就可以了。
 
 ### 设置系统变量
 
@@ -88,8 +88,8 @@ python ..\automate\automate-git.py --download-dir=c:\code\chromium_git --depot-t
 配置文件路径：
 
 - code/chromium_git/chromium/src/third_party/ffmpeg/chromium/config/Chrome/==win==/x64/config.h
-  _~win 为要编译的平台~
-  ~x64 为要编译的 CPU 架构~_
+  _ win 为要编译的平台
+  - x64 为要编译的 CPU 架构
 
 Config 配置文件如下：
 [config.h](https://gist.github.com/neostfox/0987b1d30a384d467db3a5ba166b4dfe)
