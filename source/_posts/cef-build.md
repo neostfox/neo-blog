@@ -7,7 +7,7 @@ tags:
   - C#
 excerpt: 本文记录在windows平台下，编译最新版本 CEF（Chromium Version:96.0.4664.110）过程 ，包含详细的步骤和常见问题，编译完成后的 CEF 具备完整功能的 cef_sandbox.lib 和完整的多媒体功能（如常用的 MP3 MP4 FLV AVI 等）支持。
 date: 2021-10-25 20:33:36
-cover: "https://pic2.zhimg.com/v2-58d51f508827b08c7eb2fec472f751a7_1440w.jpg"
+cover: "https://hbimg.huabanimg.com/e82770c95fdefcf35246432658f85d45a12a4ce75c2f-L5VcKL_fw658/format/webp"
 ---
 
 # CEF3 Windows 编译 4664.110 增加 H.264 支持
