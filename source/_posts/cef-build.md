@@ -69,7 +69,7 @@ Path 中增加 c:\code\depot_tools；并且置顶。关闭 CMD 命令行，重�
 
 ### 下载 chromium 源码
 
-⚠️ 一定不要开启 ==set GN_DEFINES=is_component_build=true== CEF 官方说明 CEF 二进制分发不支持 component_build 详细说明见 CEF [Build Notes](https://bitbucket.org/chromiumembedded/cef/wiki/BranchesAndBuilding.md) 下的 Build Notes。
+⚠️ ***一定不要开启 ==set GN_DEFINES=is_component_build=true== CEF 官方说明 CEF 二进制分发不支持 component_build 详细说明见 CEF [Build Notes](https://bitbucket.org/chromiumembedded/cef/wiki/BranchesAndBuilding.md) 下的 Build Notes。***
 
 Component builds are supported by 3202 branch and newer and significantly reduce link time. Add is_component_build=true to GN_DEFINES in combination with the above VS-version-specific values. Component builds cannot be used to create a CEF binary distribution. See issue [#1617](https://bitbucket.org/chromiumembedded/cef/issues/1617#comment-38074395) for details.
 
