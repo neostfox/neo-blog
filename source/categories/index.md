@@ -26,3 +26,10 @@ type: categories
 layout: categories
 author: neo.st.fox
 ---
+---
+title: environment
+date: 2023-09-21
+type: categories
+layout: categories
+author: neo.st.fox
+---
